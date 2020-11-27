@@ -15,7 +15,8 @@ class ForthViewController: UIViewController {
     @IBOutlet weak var CommentLabel: UILabel!
     @IBOutlet weak var TalkLabel: UILabel!
     
-    var receiveNumber : Int?
+    var receiveNumber: Int?
+    var ForthUser: String?
     
     let db = Firestore.firestore()
     
@@ -26,7 +27,6 @@ class ForthViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(receiveNumber)
         
         db.collection("result").whereField("ID", isEqualTo: self.receiveNumber!).getDocuments { (snaps, error) in
             if error != nil {
@@ -55,8 +55,8 @@ class ForthViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "postRoom" {
-            let nextVC = segue.destination as! ChatViewController
-            nextVC.roomNumber = receiveNumber
+            let nextVC = segue.destination as! FifthViewController
+            nextVC.FifthUser = ForthUser
         }
     }
 }

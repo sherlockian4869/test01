@@ -1,0 +1,6 @@
+framework module Pods_ichariApp {
+  umbrella header "Pods-ichariApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

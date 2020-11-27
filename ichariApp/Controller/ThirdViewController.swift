@@ -10,7 +10,8 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
-    var postNumber : Int?
+    var postNumber: Int?
+    var ThirdUser: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class ThirdViewController: UIViewController {
         if segue.identifier == "post" {
             let nextVC = segue.destination as! ForthViewController
             nextVC.receiveNumber = postNumber
+            nextVC.ForthUser = ThirdUser
         }
     }
 }
