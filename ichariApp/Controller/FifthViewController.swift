@@ -95,8 +95,6 @@ extension FifthViewController: UITableViewDelegate, UITableViewDataSource {
         
         let Message: MessageModel
         Message = messageList[indexPath.row]
-        cell.UserLabel.text = Message.User
-        cell.MessageTextView.text = Message.Message
         
         return cell
     }

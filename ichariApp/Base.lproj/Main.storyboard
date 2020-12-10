@@ -242,55 +242,13 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-2h-U7U">
                                 <rect key="frame" x="0.0" y="44" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="Myd-hB-nKT" customClass="MessageTableViewCell" customModule="ichariApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Myd-hB-nKT" id="qf8-yr-EYQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbh-YT-0Zv">
-                                                    <rect key="frame" x="20" y="11" width="200" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="C5K-yH-DHx"/>
-                                                        <constraint firstAttribute="width" constant="200" id="Hcw-sP-GeJ"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRD-RT-fCr">
-                                                    <rect key="frame" x="20" y="37" width="374" height="42"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="wRD-RT-fCr" secondAttribute="bottom" constant="10" id="DgZ-Pb-QbG"/>
-                                                <constraint firstItem="wRD-RT-fCr" firstAttribute="top" secondItem="Dbh-YT-0Zv" secondAttribute="bottom" constant="5" id="HVD-SU-3jw"/>
-                                                <constraint firstItem="Dbh-YT-0Zv" firstAttribute="leading" secondItem="qf8-yr-EYQ" secondAttribute="leadingMargin" id="MMa-5f-joo"/>
-                                                <constraint firstItem="wRD-RT-fCr" firstAttribute="leading" secondItem="qf8-yr-EYQ" secondAttribute="leadingMargin" id="PAM-yH-yzB"/>
-                                                <constraint firstItem="Dbh-YT-0Zv" firstAttribute="top" secondItem="qf8-yr-EYQ" secondAttribute="topMargin" id="k08-7Z-oeE"/>
-                                                <constraint firstItem="wRD-RT-fCr" firstAttribute="trailing" secondItem="qf8-yr-EYQ" secondAttribute="trailingMargin" id="wxN-cN-ENo"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="MessageTextView" destination="wRD-RT-fCr" id="0Im-ql-B7Y"/>
-                                            <outlet property="UserLabel" destination="Dbh-YT-0Zv" id="1rf-vj-Cac"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="NSn-Gz-gFJ" id="fQW-iu-Emw"/>
                                     <outlet property="delegate" destination="NSn-Gz-gFJ" id="BJG-nB-zgu"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="gR1-XG-Wia" firstAttribute="trailing" secondItem="GH1-2h-U7U" secondAttribute="trailing" id="4or-2P-oS8"/>
                             <constraint firstItem="GH1-2h-U7U" firstAttribute="top" secondItem="gR1-XG-Wia" secondAttribute="top" id="6VR-Ri-Yoh"/>
