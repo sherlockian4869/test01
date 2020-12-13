@@ -13,11 +13,14 @@ class ThirdViewController: UIViewController {
     var postNumber: Int?
     var ThirdUser: String?
 
+    @IBOutlet weak var fortuneButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Utilities.styleHollowButton(fortuneButton)
+        
         postNumber = Int.random(in: 1 ... 6)
-        print(postNumber)
+        print(postNumber!)
     }
     
     @IBAction func PostBtn(_ sender: Any) {

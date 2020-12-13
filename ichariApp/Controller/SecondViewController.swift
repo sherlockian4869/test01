@@ -16,10 +16,13 @@ class SecondViewController: UIViewController {
     
     let db = Firestore.firestore()
     @IBOutlet weak var NameTextField: UITextField!
+    @IBOutlet weak var registerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Utilities.noButton(registerButton)
+        NameTextField.delegate = self
+        registerButton.isEnabled = false
     }
     
     @IBAction func NameRegisterBtn(_ sender: Any) {
@@ -41,6 +44,21 @@ class SecondViewController: UIViewController {
         if segue.identifier == "NextThird" {
             let nextVC = segue.destination as! ThirdViewController
             nextVC.ThirdUser = SecondUser
+        }
+    }
+}
+
+extension SecondViewController: UITextFieldDelegate {
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        let NameIsEmpty = NameTextField.text?.isEmpty ?? false
+        
+        if NameIsEmpty {
+            registerButton.isEnabled = false
+            registerButton.backgroundColor = .rgb(red: 224, green: 224, blue: 224)
+        } else {
+            registerButton.isEnabled = true
+            registerButton.backgroundColor = .white
         }
     }
 }
