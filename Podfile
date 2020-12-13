@@ -9,5 +9,6 @@ target 'ichariApp' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Database'
+  pod 'PKHUD'
  
 end

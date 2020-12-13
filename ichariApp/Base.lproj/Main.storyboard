@@ -45,6 +45,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="sPw-qz-u1G" id="x4k-5v-NOU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,6 +102,7 @@
                     </view>
                     <connections>
                         <outlet property="NameTextField" destination="Tth-cT-4g1" id="aSa-e6-B3i"/>
+                        <outlet property="registerButton" destination="dnE-qo-AWW" id="2Uh-JP-YpW"/>
                         <segue destination="LxC-Hz-HVo" kind="presentation" identifier="NextThird" modalPresentationStyle="fullScreen" id="fT3-Uw-XnX"/>
                     </connections>
                 </viewController>
@@ -145,6 +149,7 @@
                         <viewLayoutGuide key="safeArea" id="uiu-Mz-HqW"/>
                     </view>
                     <connections>
+                        <outlet property="fortuneButton" destination="ufp-Mg-8aG" id="ilU-LZ-Zu2"/>
                         <segue destination="V4m-sE-HyR" kind="presentation" identifier="post" modalPresentationStyle="fullScreen" id="vFT-7o-5ic"/>
                     </connections>
                 </viewController>
@@ -224,6 +229,7 @@
                         <outlet property="CommentLabel" destination="ze3-5Z-kJh" id="dVq-wo-kc8"/>
                         <outlet property="FortuneLabel" destination="kH2-gd-pd9" id="z05-M4-fPF"/>
                         <outlet property="TalkLabel" destination="1PH-fB-wBt" id="OeM-Ti-afl"/>
+                        <outlet property="postButton" destination="kYh-m1-ftM" id="x0r-q3-KW0"/>
                         <segue destination="NSn-Gz-gFJ" kind="presentation" identifier="postRoom" modalPresentationStyle="fullScreen" id="2yM-2J-oI8"/>
                     </connections>
                 </viewController>
@@ -239,7 +245,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-2h-U7U">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-2h-U7U">
                                 <rect key="frame" x="0.0" y="44" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>

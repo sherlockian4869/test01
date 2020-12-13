@@ -21,6 +21,8 @@
 		3963B391256E7A0F00840126 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963B390256E7A0F00840126 /* FifthViewController.swift */; };
 		3963B394256E7CC100840126 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963B393256E7CC100840126 /* MessageModel.swift */; };
 		3963B396256E7DD100840126 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963B395256E7DD100840126 /* MessageTableViewCell.swift */; };
+		3971497825826FD200A3BDD7 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3971497725826FD200A3BDD7 /* MessageTableViewCell.xib */; };
+		397149802585D87C00A3BDD7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3971497F2585D87C00A3BDD7 /* Utilities.swift */; };
 		39ED539D256E9EFE008C7426 /* MessageInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39ED539C256E9EFE008C7426 /* MessageInputView.xib */; };
 		39ED539F256EA576008C7426 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED539E256EA576008C7426 /* MessageInputView.swift */; };
 		E5A626040519D92D4CC7FFEA /* Pods_ichariApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DDC32439883893CA66826D /* Pods_ichariApp.framework */; };
@@ -43,6 +45,8 @@
 		3963B390256E7A0F00840126 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		3963B393256E7CC100840126 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		3963B395256E7DD100840126 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		3971497725826FD200A3BDD7 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		3971497F2585D87C00A3BDD7 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		39ED539C256E9EFE008C7426 /* MessageInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageInputView.xib; sourceTree = "<group>"; };
 		39ED539E256EA576008C7426 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		48DDC32439883893CA66826D /* Pods_ichariApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ichariApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +96,7 @@
 		3963B36225653ABE00840126 /* ichariApp */ = {
 			isa = PBXGroup;
 			children = (
+				3971497E2585D86200A3BDD7 /* Helper */,
 				3963B392256E7CB200840126 /* Model */,
 				3963B387256A894800840126 /* Controller */,
 				3963B388256A896D00840126 /* View */,
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				3963B389256A8A1F00840126 /* UIColor-Extension.swift */,
+				3971497725826FD200A3BDD7 /* MessageTableViewCell.xib */,
 				3963B395256E7DD100840126 /* MessageTableViewCell.swift */,
 				39ED539C256E9EFE008C7426 /* MessageInputView.xib */,
 				39ED539E256EA576008C7426 /* MessageInputView.swift */,
@@ -135,6 +141,14 @@
 				3963B393256E7CC100840126 /* MessageModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3971497E2585D86200A3BDD7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3971497F2585D87C00A3BDD7 /* Utilities.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		C3E234D3B7B44A4816C6A7DA /* Frameworks */ = {
@@ -206,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3963B37025653AC000840126 /* LaunchScreen.storyboard in Resources */,
+				3971497825826FD200A3BDD7 /* MessageTableViewCell.xib in Resources */,
 				3963B37825653C6B00840126 /* GoogleService-Info.plist in Resources */,
 				3963B36D25653AC000840126 /* Assets.xcassets in Resources */,
 				3963B36B25653ABE00840126 /* Main.storyboard in Resources */,
@@ -268,6 +283,7 @@
 				3963B396256E7DD100840126 /* MessageTableViewCell.swift in Sources */,
 				3963B38A256A8A1F00840126 /* UIColor-Extension.swift in Sources */,
 				3963B391256E7A0F00840126 /* FifthViewController.swift in Sources */,
+				397149802585D87C00A3BDD7 /* Utilities.swift in Sources */,
 				3963B37C25653EB600840126 /* ThirdViewController.swift in Sources */,
 				3963B36425653ABE00840126 /* AppDelegate.swift in Sources */,
 				3963B394256E7CC100840126 /* MessageModel.swift in Sources */,
