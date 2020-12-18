@@ -16,6 +16,5 @@ class FirstViewController: UIViewController {
         Utilities.styleHollowButton(startButton)
     }
 
-
 }
 

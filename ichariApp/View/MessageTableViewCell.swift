@@ -22,8 +22,8 @@ class MessageTableViewCell: UITableViewCell {
     
     var user: MessageModel? {
         didSet {
-            if user != nil {
-                usernameLabel.text = message?.User
+            if let user = user {
+                usernameLabel.text = user.User
             }
         }
     }
