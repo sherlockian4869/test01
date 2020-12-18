@@ -25,10 +25,14 @@ class ForthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Utilities.styleHollowButton(postButton)
+        fetchLoadDataFromFirestore()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    private func fetchLoadDataFromFirestore() {
         HUD.show(.progress)
         db.collection("result").whereField("ID", isEqualTo: self.receiveNumber!).getDocuments { (snaps, error) in
             if error != nil {
